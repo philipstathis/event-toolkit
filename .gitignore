@@ -1,0 +1,5 @@
+node_modules
+.serverless
+yarn-error.log
+*.csv
+*.xlsx
