@@ -18,8 +18,8 @@ module.exports.getCurrentOfficers = async () => {
   const enrichedClubData = officialClubOfficers.Items.map((r) => {
     const attended = registrations.Items.find(
       (reg) =>
-        reg.id == parseInt(r.memberId, 10) + "-" + parseInt(r.clubId, 10) + "-" + r.office &&
-        (reg.eventId == 92576775808) // set the actual event here
+        reg.id == parseInt(r.memberId, 10) + "-" + parseInt(r.clubId, 10) + "-" + r.office
+        // && (reg.eventId == 98740894233) // set the actual event here
     );
     r.registered = (attended || false) && attended.registered;
     const verified = attendance.Items.find(

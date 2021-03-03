@@ -9,7 +9,8 @@ const sync = async () => {
   // await zoom.create({pathParameters: { id: 99072824214}}, {}, console.log);
   // await zoom.create({pathParameters: { id: 99493136749}}, {}, console.log);
   // await zoom.create({pathParameters: { id: 93768989390}}, {}, console.log);
-  await zoom.create({pathParameters: { id: 92576775808}}, {}, console.log);
+  // await zoom.create({pathParameters: { id: 92576775808}}, {}, console.log);
+  await zoom.create({pathParameters: { id: 98740894233}}, {}, console.log);
 }
 
 const fastcsv = require('fast-csv');
@@ -146,4 +147,13 @@ const exportPostMeetingReportForAll = async () => {
 //runPostMeetingSync(92576775808)
 // exportPostMeetingReport(92576775808);
 
-exportPostMeetingReportForAll()
+// exportPostMeetingReportForAll()
+
+// Friday Feb 23rd
+// sync();
+// sync().then(() => exportFullRegistrations(98740894233));
+// exportFullRegistrations(98740894233)
+// exportBreakoutRooms(98740894233)
+// runPostMeetingSync(98740894233);
+exportPostMeetingReport(98740894233);
+// sync()
